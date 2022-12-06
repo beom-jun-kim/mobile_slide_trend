@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav .firCate {
+    background: sandybrown;
+}
+
+nav .secCate {
+    top: 0;
+    background: salmon;
+}
+
+nav .secCate,
+nav .thiCateList {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: 300ms;
+}
+
+nav .secCate,
+nav .thiCateList {
+    top: 0;
+    background: seagreen;
+}
+
+nav .secCate.active,
+nav .thiCateList.active {
+    transform: translateX(0);
+}
